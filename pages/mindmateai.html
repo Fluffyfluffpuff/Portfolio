@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindmate AI: Collaborative Mental Wellness Navigator with AI Decision Trees (2023)
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="../css/mindmateai.css">
+
+</head>
+
+<body class="antialiased selection:bg-rose-100">
+
+    <!-- NAVIGATION -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-50">
+        <div class="max-w-5xl mx-auto px-8 py-6 flex justify-between items-center">
+            <a href="../pages/list_of_projects.html"
+                class="back-btn inline-flex items-center gap-2 text-md font-bold uppercase tracking-widest transition">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" class="transition-transform">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Back to Projects
+            </a>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-6 md:px-8 pb-20 md:pb-32">
+
+        <!-- HEADER SECTION -->
+        <header class="py-12 md:py-24">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4 leading-tight">Mindmate AI: Collaborative Mental Wellness
+                Navigator with AI Decision Trees
+            </h1>
+            <div class="flex gap-4 text-md font-medium italic text-gray-400">
+                <span>Concept</span>
+                <span>&bull;</span>
+                <span>Design</span>
+                <span>&bull;</span>
+                <span>2023</span>
+            </div>
+        </header>
+
+        <!-- CONTENT GRID -->
+        <section class="grid grid-cols-1 md:grid-cols-12 gap-y-12 md:gap-x-12 mb-20 md:mb-32"
+            style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+            <!-- SIDEBAR -->
+            <aside class="md:col-span-4 space-y-10">
+                <div>
+                    <h4 class="text-xs md:text-sm text-[--accent-dark] font-bold uppercase tracking-widest mb-6">Tools &
+                        Technologies</h4>
+                    <div class="grid grid-cols-5 md:grid-cols-3 gap-3 w-fit">
+                        <div class="w-10 h-10 rounded-full bg-[#fdf2f2] flex items-center justify-center border border-[#eec6c7] transition-all hover:scale-110 shadow-sm"
+                            title="Figma">
+                            <i class="devicon-figma-plain text-[#db88a4] text-lg"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-xs md:text-sm text-[--accent-dark] font-bold uppercase tracking-widest mb-2">
+                        Timeline</h4>
+                    <p class="text-sm font-medium text-gray-400">2023</p>
+                </div>
+            </aside>
+
+            <!-- MAIN DESCRIPTION -->
+            <article class="md:col-span-8">
+                <h3 class="text-xl md:text-2xl font-bold mb-6 text-gray-400">Project Overview</h3>
+                <div class="space-y-6 font-light text-base md:text-lg text-gray-400">
+                    <p> Mindmate AI is a collaborative virtual therapy platform developed in 2023 to bridge the gap
+                        between mental health professionals and those seeking support. <br> <br> The platform acts as a
+                        "Collaborative Wellness Navigator," utilizing AI Decision Trees to intelligently triage user
+                        needs and facilitate precise matching with the right practitioners. <br> <br> By combining a
+                        user-centric
+                        interface with data-driven routing, Mindmate AI ensures that users receive personalized care
+                        pathways while providing mental health experts with a streamlined way to connect with the
+                        clients they are best equipped to help.</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- CAROUSEL SECTION -->
+        <section>
+            <div class="flex items-center justify-between mb-8 md:mb-10">
+                <h4 class="text-xl md:text-2xl text-[--accent] font-bold uppercase tracking-widest">Sneak Peek</h4>
+                <div class="flex gap-3">
+                    <button onclick="scrollCarousel1(-1)" class="nav-btn" aria-label="Previous">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"
+                            viewBox="0 0 24 24">
+                            <path d="M15 18l-6-6 6-6" />
+                        </svg>
+                    </button>
+                    <button onclick="scrollCarousel1(1)" class="nav-btn" aria-label="Next">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"
+                            viewBox="0 0 24 24">
+                            <path d="M9 5l6 6-6 6" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="relative w-full mb-10">
+                <div class="screenshot-gallery gap-4 md:gap-6" id="gallery1">
+                    <div class="screenshot-item">
+                        <div class="rounded-2xl overflow-hidden border border-slate-100 shadow-sm bg-slate-50">
+                            <img src="../images/MindMate1.png" class="w-full aspect-video object-cover">
+                        </div>
+                        <p class="mt-4 text-xs md:text-sm font-medium text-gray-400">01 — Patient Overview</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="rounded-2xl overflow-hidden border border-slate-100 shadow-sm bg-slate-50">
+                            <img src="../images/MindMate2.png" class="w-full aspect-video object-cover">
+                        </div>
+                        <p class="mt-4 text-xs md:text-sm font-medium text-gray-400">02 — Role</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="rounded-2xl overflow-hidden border border-slate-100 shadow-sm bg-slate-50">
+                            <img src="../images/MindMate3.png" class="w-full aspect-video object-cover">
+                        </div>
+                        <p class="mt-4 text-xs md:text-sm font-medium text-gray-400">03 — Signup</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="rounded-2xl overflow-hidden border border-slate-100 shadow-sm bg-slate-50">
+                            <img src="../images/MindMate4.png" class="w-full aspect-video object-cover">
+                        </div>
+                        <p class="mt-4 text-xs md:text-sm font-medium text-gray-400">04 — Signin</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="rounded-2xl overflow-hidden border border-slate-100 shadow-sm bg-slate-50">
+                            <img src="../images/MindMate6.png" class="w-full aspect-video object-cover"
+                                class="w-full aspect-video object-cover transition-all duration-500">
+                        </div>
+                        <p class="mt-4 text-xs md:text-sm font-medium text-gray-400">05 — MindBuddy</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="rounded-2xl overflow-hidden border border-slate-100 shadow-sm bg-slate-50">
+                            <img src="../images/MindMate7.png"
+                                class="w-full aspect-video object-cover transition-all duration-500">
+                        </div>
+                        <p class="mt-4 text-xs md:text-sm font-medium text-gray-400">06 — Recommendations</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="rounded-2xl overflow-hidden border border-slate-100 shadow-sm bg-slate-50">
+                            <img src="../images/MindMate8.png"
+                                class="w-full aspect-video object-cover transition-all duration-500">
+                        </div>
+                        <p class="mt-4 text-xs md:text-sm font-medium text-gray-400">07 — Specialists' Details</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="rounded-2xl overflow-hidden border border-slate-100 shadow-sm bg-slate-50">
+                            <img src="../images/MindMate9.png"
+                                class="w-full aspect-video object-cover transition-all duration-500">
+                        </div>
+                        <p class="mt-4 text-xs md:text-sm font-medium text-gray-400">08 — License</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="rounded-2xl overflow-hidden border border-slate-100 shadow-sm bg-slate-50">
+                            <img src="../images/MindMate10.png"
+                                class="w-full aspect-video object-cover transition-all duration-500">
+                        </div>
+                        <p class="mt-4 text-xs md:text-sm font-medium text-gray-400">09 — Therapy Goals</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="rounded-2xl overflow-hidden border border-slate-100 shadow-sm bg-slate-50">
+                            <img src="../images/MindMate11.png"
+                                class="w-full aspect-video object-cover transition-all duration-500">
+                        </div>
+                        <p class="mt-4 text-xs md:text-sm font-medium text-gray-400">10 — Payment</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="rounded-2xl overflow-hidden border border-slate-100 shadow-sm bg-slate-50">
+                            <img src="../images/MindMate12.png"
+                                class="w-full aspect-video object-cover transition-all duration-500">
+                        </div>
+                        <p class="mt-4 text-xs md:text-sm font-medium text-gray-400">11 — Transaction</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="rounded-2xl overflow-hidden border border-slate-100 shadow-sm bg-slate-50">
+                            <img src="../images/MindMate13.png"
+                                class="w-full aspect-video object-cover transition-all duration-500">
+                        </div>
+                        <p class="mt-4 text-xs md:text-sm font-medium text-gray-400">12 — Assessment</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="rounded-2xl overflow-hidden border border-slate-100 shadow-sm bg-slate-50">
+                            <img src="../images/MindMate14.png"
+                                class="w-full aspect-video object-cover transition-all duration-500">
+                        </div>
+                        <p class="mt-4 text-xs md:text-sm font-medium text-gray-400">13 — Settings</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="rounded-2xl overflow-hidden border border-slate-100 shadow-sm bg-slate-50">
+                            <img src="../images/MindMate15.png"
+                                class="w-full aspect-video object-cover transition-all duration-500">
+                        </div>
+                        <p class="mt-4 text-xs md:text-sm font-medium text-gray-400">14 — Message</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="rounded-2xl overflow-hidden border border-slate-100 shadow-sm bg-slate-50">
+                            <img src="../images/MindMate16.png"
+                                class="w-full aspect-video object-cover transition-all duration-500">
+                        </div>
+                        <p class="mt-4 text-xs md:text-sm font-medium text-gray-400">15 — Contacts</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="rounded-2xl overflow-hidden border border-slate-100 shadow-sm bg-slate-50">
+                            <img src="../images/MindMate17.png"
+                                class="w-full aspect-video object-cover transition-all duration-500">
+                        </div>
+                        <p class="mt-4 text-xs md:text-sm font-medium text-gray-400">16 — Call History</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="rounded-2xl overflow-hidden border border-slate-100 shadow-sm bg-slate-50">
+                            <img src="../images/MindMate18.png"
+                                class="w-full aspect-video object-cover transition-all duration-500">
+                        </div>
+                        <p class="mt-4 text-xs md:text-sm font-medium text-gray-400">17 — Video Call</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="rounded-2xl overflow-hidden border border-slate-100 shadow-sm bg-slate-50">
+                            <img src="../images/MindMate19.png"
+                                class="w-full aspect-video object-cover transition-all duration-500">
+                        </div>
+                        <p class="mt-4 text-xs md:text-sm font-medium text-gray-400">18 — Emergency Intervention</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- SECOND CAROUSEL SECTION -->
+
+        <section>
+            <div class="flex items-center justify-between mb-8 md:mb-10">
+                <h4 class="text-xl md:text-2xl text-[--accent] font-bold uppercase tracking-widest"></h4>
+                <div class="flex gap-3">
+                    <button onclick="scrollCarousel2(-1)" class="nav-btn" aria-label="Previous">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"
+                            viewBox="0 0 24 24">
+                            <path d="M15 18l-6-6 6-6" />
+                        </svg>
+                    </button>
+                    <button onclick="scrollCarousel2(1)" class="nav-btn" aria-label="Next">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"
+                            viewBox="0 0 24 24">
+                            <path d="M9 5l6 6-6 6" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="relative w-full">
+                <div class="screenshot-gallery gap-4 md:gap-6" id="gallery2">
+                    <div class="screenshot-item">
+                        <div class="rounded-2xl overflow-hidden border border-slate-100 shadow-sm bg-slate-50">
+                            <img src="../images/MindMate20.png" class="w-full aspect-video object-cover">
+                        </div>
+                        <p class="mt-4 text-xs md:text-sm font-medium text-gray-400">01 — Specialists' Overview</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="rounded-2xl overflow-hidden border border-slate-100 shadow-sm bg-slate-50">
+                            <img src="../images/MindMate21.png" class="w-full aspect-video object-cover">
+                        </div>
+                        <p class="mt-4 text-xs md:text-sm font-medium text-gray-400">02 — Role</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="rounded-2xl overflow-hidden border border-slate-100 shadow-sm bg-slate-50">
+                            <img src="../images/MindMate22.png" class="w-full aspect-video object-cover">
+                        </div>
+                        <p class="mt-4 text-xs md:text-sm font-medium text-gray-400">03 — Signup</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="rounded-2xl overflow-hidden border border-slate-100 shadow-sm bg-slate-50">
+                            <img src="../images/MindMate23.png" class="w-full aspect-video object-cover">
+                        </div>
+                        <p class="mt-4 text-xs md:text-sm font-medium text-gray-400">04 — Signin</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="rounded-2xl overflow-hidden border border-slate-100 shadow-sm bg-slate-50">
+                            <img src="../images/MindMate24.png" class="w-full aspect-video object-cover">
+                        </div>
+                        <p class="mt-4 text-xs md:text-sm font-medium text-gray-400">05 — Specialists' Desk</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="rounded-2xl overflow-hidden border border-slate-100 shadow-sm bg-slate-50">
+                            <img src="../images/MindMate25.png" class="w-full aspect-video object-cover"
+                                class="w-full aspect-video object-cover transition-all duration-500">
+                        </div>
+                        <p class="mt-4 text-xs md:text-sm font-medium text-gray-400">05 — Patient Requests</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="rounded-2xl overflow-hidden border border-slate-100 shadow-sm bg-slate-50">
+                            <img src="../images/MindMate26.png"
+                                class="w-full aspect-video object-cover transition-all duration-500">
+                        </div>
+                        <p class="mt-4 text-xs md:text-sm font-medium text-gray-400">06 — Schedule Session</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="rounded-2xl overflow-hidden border border-slate-100 shadow-sm bg-slate-50">
+                            <img src="../images/MindMate28.png"
+                                class="w-full aspect-video object-cover transition-all duration-500">
+                        </div>
+                        <p class="mt-4 text-xs md:text-sm font-medium text-gray-400">07 — Patient List</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="rounded-2xl overflow-hidden border border-slate-100 shadow-sm bg-slate-50">
+                            <img src="../images/MindMate29.png"
+                                class="w-full aspect-video object-cover transition-all duration-500">
+                        </div>
+                        <p class="mt-4 text-xs md:text-sm font-medium text-gray-400">08 — Therapy Goals</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="rounded-2xl overflow-hidden border border-slate-100 shadow-sm bg-slate-50">
+                            <img src="../images/MindMate30.png"
+                                class="w-full aspect-video object-cover transition-all duration-500">
+                        </div>
+                        <p class="mt-4 text-xs md:text-sm font-medium text-gray-400">10 — Payment</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="rounded-2xl overflow-hidden border border-slate-100 shadow-sm bg-slate-50">
+                            <img src="../images/MindMate31.png"
+                                class="w-full aspect-video object-cover transition-all duration-500">
+                        </div>
+                        <p class="mt-4 text-xs md:text-sm font-medium text-gray-400">11 — Transaction</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="rounded-2xl overflow-hidden border border-slate-100 shadow-sm bg-slate-50">
+                            <img src="../images/MindMate32.png"
+                                class="w-full aspect-video object-cover transition-all duration-500">
+                        </div>
+                        <p class="mt-4 text-xs md:text-sm font-medium text-gray-400">12 — Assessment</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="rounded-2xl overflow-hidden border border-slate-100 shadow-sm bg-slate-50">
+                            <img src="../images/MindMate33.png"
+                                class="w-full aspect-video object-cover transition-all duration-500">
+                        </div>
+                        <p class="mt-4 text-xs md:text-sm font-medium text-gray-400">13 — Settings</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="rounded-2xl overflow-hidden border border-slate-100 shadow-sm bg-slate-50">
+                            <img src="../images/MindMate34.png"
+                                class="w-full aspect-video object-cover transition-all duration-500">
+                        </div>
+                        <p class="mt-4 text-xs md:text-sm font-medium text-gray-400">14 — Message</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="rounded-2xl overflow-hidden border border-slate-100 shadow-sm bg-slate-50">
+                            <img src="../images/MindMate35.png"
+                                class="w-full aspect-video object-cover transition-all duration-500">
+                        </div>
+                        <p class="mt-4 text-xs md:text-sm font-medium text-gray-400">15 — Contacts</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="rounded-2xl overflow-hidden border border-slate-100 shadow-sm bg-slate-50">
+                            <img src="../images/MindMate36.png"
+                                class="w-full aspect-video object-cover transition-all duration-500">
+                        </div>
+                        <p class="mt-4 text-xs md:text-sm font-medium text-gray-400">16 — Contact History</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="rounded-2xl overflow-hidden border border-slate-100 shadow-sm bg-slate-50">
+                            <img src="../images/MindMate37.png"
+                                class="w-full aspect-video object-cover transition-all duration-500">
+                        </div>
+                        <p class="mt-4 text-xs md:text-sm font-medium text-gray-400">17 — Video Call</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="rounded-2xl overflow-hidden border border-slate-100 shadow-sm bg-slate-50">
+                            <img src="../images/MindMate38.png"
+                                class="w-full aspect-video object-cover transition-all duration-500">
+                        </div>
+                        <p class="mt-4 text-xs md:text-sm font-medium text-gray-400">18 — Crisis Intervention</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="rounded-2xl overflow-hidden border border-slate-100 shadow-sm bg-slate-50">
+                            <img src="../images/MindMate39.png"
+                                class="w-full aspect-video object-cover transition-all duration-500">
+                        </div>
+                        <p class="mt-4 text-xs md:text-sm font-medium text-gray-400">19 — Urgent Counseling</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer
+        class="max-w-5xl mx-auto px-8 py-20 flex justify-center items-center text-xs font-bold uppercase tracking-widest"
+        style="color: var(--accent-medium); border-color: var(--accent-light);">
+        <div>© <span id="year"></span> SANDRA A. ALINGASA</div>
+    </footer>
+
+    <script src="../javascript/mindmateai.js"></script>
+    <script src="../javascript/scroll_trigger.js"></script>
+
+</body>
+
+</html>
