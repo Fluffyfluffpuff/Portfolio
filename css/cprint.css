@@ -1,0 +1,87 @@
+:root {
+            --accent: #f28bb1;
+            --accent-dark: #d37094;
+            --accent-light: #f0d4e0;
+            --accent-medium: #e5c7d4;
+            --bg: #ffffff;
+        }
+
+        body {
+            font-family: "Baloo 2", sans-serif;
+            background-color: var(--bg);
+            color: var(--accent-medium);
+            line-height: 1.8;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            color: var(--accent);
+            letter-spacing: -0.02em;
+        }
+
+        /* CAROUSEL STYLES */
+        .screenshot-gallery {
+            display: flex;
+            overflow-x: auto;
+            /* Gap is 16px on mobile, 24px on desktop via Tailwind */
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            /* Firefox */
+        }
+
+        .screenshot-gallery::-webkit-scrollbar {
+            display: none;
+            /* Chrome/Safari */
+        }
+
+        .screenshot-item {
+            flex: 0 0 100%;
+            /* Full width on mobile */
+            scroll-snap-align: start;
+        }
+
+        @media (min-width: 768px) {
+            .screenshot-item {
+                flex: 0 0 80%;
+                /* Partial view on desktop to hint at next slide */
+            }
+        }
+
+        .nav-btn {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            border: 1px solid #e2e8f0;
+            color: var(--accent-dark);
+            background: white;
+            transition: all 0.3s ease;
+        }
+
+        @media (min-width: 768px) {
+            .nav-btn {
+                width: 44px;
+                height: 44px;
+            }
+        }
+
+        .nav-btn:hover {
+            background: var(--accent-dark);
+            color: white;
+            border-color: var(--accent-dark);
+            transform: translateY(-2px);
+        }
+
+        .back-btn {
+            color: var(--accent);
+        }
+
+        .back-btn:hover {
+            color: var(--accent-dark);
+        }
